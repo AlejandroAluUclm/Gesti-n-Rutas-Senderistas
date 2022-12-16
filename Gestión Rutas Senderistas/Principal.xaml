@@ -14,22 +14,12 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="57*"/>
-            <RowDefinition Height="287*"/>
-            <RowDefinition Height="90*"/>
+            <RowDefinition Height="324*"/>
+            <RowDefinition Height="53*"/>
         </Grid.RowDefinitions>
-        <TabControl HorizontalAlignment="Center" Height="228" Margin="0,1,0,0" VerticalAlignment="Top" Width="488" Grid.Row="1" Grid.Column="1">
-            <TabItem Header="Inicio">
-                <Grid Background="#FFE5E5E5" Margin="-80,0,-10,-92">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="112*"/>
-                        <ColumnDefinition Width="52*"/>
-                        <ColumnDefinition Width="409*"/>
-                    </Grid.ColumnDefinitions>
-                    <ListBox Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="125" Margin="10,39,0,0" VerticalAlignment="Top" Width="151" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-                </Grid>
-            </TabItem>
+        <TabControl HorizontalAlignment="Left" Height="304" Margin="74,0,0,0" VerticalAlignment="Center" Width="533" Grid.Row="1" Grid.ColumnSpan="2">
             <TabItem Header="Rutas">
-                <Grid Background="#FFE5E5E5" Margin="0,0,0,-29">
+                <Grid Background="#FFE5E5E5" Height="277" Margin="0,0,5,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="26*"/>
                         <ColumnDefinition Width="457*"/>
@@ -62,5 +52,7 @@
                 </MenuItem>
             </MenuItem>
         </Menu>
+        <Label x:Name="InfoUser" Grid.Column="1" Content="Información Usuario" HorizontalAlignment="Left" Margin="465,190,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"/>
+        <Image x:Name="Img_User" Source="/Recursos/User_Icon.png" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="10,66,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>
