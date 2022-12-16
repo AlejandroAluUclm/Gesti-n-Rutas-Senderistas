@@ -20,6 +20,7 @@ namespace Gestión_Rutas_Senderistas
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Principal principal = new Principal();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +28,8 @@ namespace Gestión_Rutas_Senderistas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            principal.Show();
+            this.Close();
             
         }
     }

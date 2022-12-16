@@ -108,5 +108,8 @@
   <ItemGroup>
     <Resource Include="Recursos\Sendero.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\User_Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
