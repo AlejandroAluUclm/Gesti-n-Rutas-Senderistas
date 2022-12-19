@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Gestión_Rutas_Senderistas"
         mc:Ignorable="d"
         Title="Login" Height="500" Width="800"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50*"/>
@@ -26,10 +26,11 @@
         <Label x:Name="LblSesion" Grid.Column="1" Content="Iniciar Sesión" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" Height="49" VerticalContentAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <Label Grid.Column="1" Content="Usuario:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="81" FontSize="18" Margin="38,35,0,0"/>
         <Label Grid.Column="1" Content="Contraseña:" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Margin="38,36,0,0" FontSize="18" Grid.RowSpan="2"/>
-        <Button Grid.Column="2" Content="Entrar" HorizontalAlignment="Left" Margin="106,41,0,0" Grid.Row="5" VerticalAlignment="Top" RenderTransformOrigin="0.405,-1.896" FontSize="18" Grid.ColumnSpan="2" Width="76" Grid.RowSpan="2" Click="Button_Click"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="38,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="266" FontSize="16" UndoLimit="100" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnEntrar" Grid.Column="2" Content="Entrar" HorizontalAlignment="Left" Margin="106,41,0,0" Grid.Row="5" VerticalAlignment="Top" RenderTransformOrigin="0.405,-1.896" FontSize="18" Grid.ColumnSpan="2" Width="76" Grid.RowSpan="2" Click="Button_Click"/>
+        <TextBox x:Name="txtUsuario" Grid.Column="1" HorizontalAlignment="Left" Margin="38,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="266" FontSize="16" UndoLimit="100" Grid.ColumnSpan="3" KeyDown="txtUsuario_KeyDown"/>
         <Image x:Name="ImgSendero" Source="/Recursos/Sendero.jpg" HorizontalAlignment="Left" Grid.RowSpan="7" VerticalAlignment="Top"/>
-        <PasswordBox Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="38,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="266" Height="22"/>
-
+        <PasswordBox x:Name="passPwd" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="38,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="266" Height="22" IsEnabled="False" KeyDown="passPwd_KeyDown"/>
+        <Image x:Name="imgCheckUsuario" Grid.Column="3" HorizontalAlignment="Left" Height="30" Grid.Row="2" Width="30" RenderTransformOrigin="0.583,0.078" Margin="10,10,10,10"/>
+        <Image x:Name="imgCheckContrasena" Grid.Column="3" Height="30" Grid.Row="4" Width="30" RenderTransformOrigin="0.531,-0.319" Margin="10,10,0,10" HorizontalAlignment="Left"/>
     </Grid>
 </Window>
