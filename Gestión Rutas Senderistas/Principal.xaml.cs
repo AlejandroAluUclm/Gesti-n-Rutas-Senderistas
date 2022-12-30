@@ -28,5 +28,10 @@ namespace Gestión_Rutas_Senderistas
         {
 
         }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

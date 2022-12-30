@@ -18,7 +18,7 @@
             <RowDefinition Height="53*"/>
         </Grid.RowDefinitions>
         <TabControl Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1">
-            <TabItem Header="Rutas" Margin="30,30,-2,0">
+            <TabItem Header="Rutas" Margin="-2,-2,-5,0">
                 <Grid Background="#FFE5E5E5" Margin="11,0,5,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="14*"/>
@@ -28,7 +28,7 @@
                     <ListBox HorizontalAlignment="Left" Height="127" Margin="10,29,0,0" VerticalAlignment="Top" Width="135" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Guías Senderistas">
+            <TabItem Header="Guías Senderistas" Margin="5,-2,-8,0">
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,-29">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="26*"/>
@@ -37,7 +37,7 @@
                     <ListBox HorizontalAlignment="Left" Height="127" Margin="10,29,0,0" VerticalAlignment="Top" Width="135" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Excursionistas">
+            <TabItem Header="Excursionistas" Margin="8,-2,-14,0">
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,-29">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="26*"/>
