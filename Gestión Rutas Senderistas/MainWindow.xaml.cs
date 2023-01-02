@@ -124,7 +124,6 @@ namespace Gestión_Rutas_Senderistas
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-         
             if (txtUsuario.Text.Equals(usuario) && passPwd.Password.Equals(password)){
                 principal.Show();
                 this.Close();
