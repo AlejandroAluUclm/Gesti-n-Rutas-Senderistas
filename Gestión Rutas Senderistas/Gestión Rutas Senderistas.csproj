@@ -114,5 +114,14 @@
   <ItemGroup>
     <Resource Include="Recursos\User_Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\InfoExcursionista.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\InfoRuta.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\InfoGuia.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

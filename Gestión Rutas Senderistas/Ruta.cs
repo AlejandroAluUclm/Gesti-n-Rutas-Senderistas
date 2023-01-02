@@ -10,13 +10,13 @@ public class Ruta
     public string Hora { get; set; }
     public string Guía { get; set; }
     public string TiempoEstimado { get; set; }
-    public int dificultad { get; set; }
-    public Boolean Material { get; set; }
-    public Boolean Comida { get; set; }
+    public string Dificultad { get; set; }
+    public string Material { get; set; }
+    public string Comida { get; set; }
     public List<string> PuntosInteres = new List<string>();
     public List<string> Escursionistas = new List<string>();
 
-    public Ruta(string nombre, string origen, string destino, string fecha, string hora, string guía, string tiempoEstimado, int dificultad, bool material, bool comida, List<string> puntosInteres)
+    public Ruta(string nombre, string origen, string destino, string fecha, string hora, string guía, string tiempoEstimado, string dificultad, string material, string comida, List<string> puntosInteres)
     {
         Nombre = nombre;
         Origen = origen;
@@ -25,7 +25,7 @@ public class Ruta
         Hora = hora;
         Guía = guía;
         TiempoEstimado = tiempoEstimado;
-        this.dificultad = dificultad;
+        Dificultad = dificultad;
         Material = material;
         Comida = comida;
         PuntosInteres = puntosInteres;
