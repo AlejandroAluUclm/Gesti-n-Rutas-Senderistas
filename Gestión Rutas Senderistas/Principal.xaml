@@ -55,7 +55,7 @@
                 </MenuItem>
             </MenuItem>
         </Menu>
-        <Label x:Name="InfoUser" Grid.Column="2" Content="Información Usuario" HorizontalAlignment="Center" Margin="0,126,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="18" Height="34" Width="149"/>
+        <Label x:Name="InfoUser" Grid.Column="2" Content="Usuario: Admin" Margin="10,131,9,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <Image x:Name="Img_User" Source="/Recursos/User_Icon.png" Grid.Column="2" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Height="149" Width="149"/>
     </Grid>
 </Window>
