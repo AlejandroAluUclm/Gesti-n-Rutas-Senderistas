@@ -15,10 +15,12 @@ using System.Windows.Shapes;
 namespace Gestión_Rutas_Senderistas
 {
     /// <summary>
-    /// Lógica de interacción para Principal.xaml
+    /// Lógica de interacción para MainWindow.xaml
     /// </summary>
     public partial class Principal : Window
     {
+        private AddGuia vGuia = new AddGuia();
+        private AddRuta vRuta = new AddRuta();
         public Principal()
         {
             InitializeComponent();
@@ -32,6 +34,16 @@ namespace Gestión_Rutas_Senderistas
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void BtnAddGuia_Click(object sender, RoutedEventArgs e)
+        {
+            vGuia.Show();
+        }
+
+        private void BtnAddRuta_Click(object sender, RoutedEventArgs e)
+        {
+            vRuta.Show();
         }
     }
 }

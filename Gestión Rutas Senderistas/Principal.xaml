@@ -31,7 +31,7 @@
                         <ColumnDefinition Width="414*"/>
                     </Grid.ColumnDefinitions>
                     <ListBox HorizontalAlignment="Center" Height="188" VerticalAlignment="Center" Width="136" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1"/>
-                    <Button x:Name="BtnAddRuta" Grid.Column="1" Content="Añadir Ruta" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444"/>
+                    <Button x:Name="BtnAddRuta" Grid.Column="1" Content="Añadir Ruta" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddRuta_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Guías Senderistas" Margin="5,-2,-8,0">
@@ -47,7 +47,7 @@
                         <ColumnDefinition Width="414*"/>
                     </Grid.ColumnDefinitions>
                     <ListBox HorizontalAlignment="Center" Height="188" VerticalAlignment="Center" Width="136" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1"/>
-                    <Button x:Name="BtnAddGuia" Grid.Column="1" Content="Añadir Guía" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444"/>
+                    <Button x:Name="BtnAddGuia" Grid.Column="1" Content="Añadir Guía" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Excursionistas" Margin="8,-2,-14,0">

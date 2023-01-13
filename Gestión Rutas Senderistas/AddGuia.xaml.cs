@@ -23,5 +23,9 @@ namespace Gestión_Rutas_Senderistas
         {
             InitializeComponent();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+        }
     }
 }

@@ -8,6 +8,38 @@
         Title="Añadir Guía" Height="500" Width="800"
         ResizeMode="NoResize" Closing="Window_Closing">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="375*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="1" Content="Nombre:" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Margin="0,13,21,0" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="Apellido:" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Top" FontSize="20" Margin="0,14,21,0" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="Teléfono:" HorizontalAlignment="Right" Grid.Row="3" VerticalAlignment="Top" FontSize="20" Margin="0,13,21,0" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="Email:" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Top" FontSize="20" Margin="0,13,21,0" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="Nota:" HorizontalAlignment="Right" Grid.Row="5" VerticalAlignment="Top" FontSize="20" Margin="0,13,21,0" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="Idiomas:" HorizontalAlignment="Right" Grid.Row="6" VerticalAlignment="Top" FontSize="20" Margin="0,13,21,0" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="50,17,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="50,17,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="50,17,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="50,17,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="50,17,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="50,17,0,0" Grid.Row="6" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button x:Name="Add" Grid.Column="4" Content="Añadir" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" FontSize="20"/>
+
     </Grid>
 </Window>
