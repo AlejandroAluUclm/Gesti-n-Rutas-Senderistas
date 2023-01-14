@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 public class Guia
 {
@@ -6,16 +7,16 @@ public class Guia
     public string Apellido { get; set; }
     public string Telefono { get; set; }
     public string Email { get; set; }
-    public string NotaMedia { get; set; }
+    public int NotaMedia { get; set; }
     public List<string> Idiomas = new List<string>();
-
-    public Guia(string nombre, string apellido, string telefono, string email, string notaMedia, List<string> idiomas)
+    Random rnd = new Random();
+    public Guia(string nombre, string apellido, string telefono, string email, List<string> idiomas)
     {
         Nombre = nombre;
         Apellido = apellido;
         Telefono = telefono;
         Email = email;
-        NotaMedia = notaMedia;
+        NotaMedia = rnd.Next(0,10);
         Idiomas = idiomas;
     }
 }
