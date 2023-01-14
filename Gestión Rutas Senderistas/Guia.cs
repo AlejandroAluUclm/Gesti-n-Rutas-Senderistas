@@ -8,6 +8,7 @@ public class Guia
     public string Telefono { get; set; }
     public string Email { get; set; }
     public int NotaMedia { get; set; }
+    public string Foto { get; set; }
     public List<string> Idiomas = new List<string>();
     Random rnd = new Random();
     public Guia(string nombre, string apellido, string telefono, string email, List<string> idiomas)
