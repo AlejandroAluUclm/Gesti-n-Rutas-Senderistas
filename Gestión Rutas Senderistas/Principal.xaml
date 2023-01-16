@@ -13,25 +13,28 @@
             <ColumnDefinition Width="149*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="57*"/>
-            <RowDefinition Height="324*"/>
-            <RowDefinition Height="53*"/>
+
         </Grid.RowDefinitions>
-        <TabControl Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="0,57,0,0">
+        <TabControl Grid.Column="0" Grid.ColumnSpan="2" Margin="0,15,0,0" Grid.Row="1">
             <TabItem Header="Rutas" Margin="-2,-2,-5,0">
                 <Grid Background="#FFE5E5E5" Margin="0,0,-1,0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="118*"/>
-                        <RowDefinition Height="23*"/>
-                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="129*"/>
+                        <RowDefinition Height="19*"/>
+
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220*"/>
                         <ColumnDefinition Width="10*"/>
-                        <ColumnDefinition Width="141*"/>
-                        <ColumnDefinition Width="414*"/>
+                        <ColumnDefinition Width="350*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox HorizontalAlignment="Center" Height="188" VerticalAlignment="Center" Width="136" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1"/>
-                    <Button x:Name="BtnAddRuta" Grid.Column="1" Content="Añadir Ruta" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddRuta_Click"/>
+                    <ListBox x:Name="lstListaRutas" Grid.Column="0" SelectedIndex="0" Margin="5,5,5,5"/>
+                    <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Margin="149,0,0,0" />
+                    <StackPanel x:Name="spDetallesRuta" Grid.Column="1" Orientation="Vertical" Grid.ColumnSpan="3" Margin="149,0,0,0">
+                    </StackPanel>
+                    <Button x:Name="BtnAddRuta" Grid.Column="2" Content="Añadir Ruta" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddRuta_Click" Height="26" Width="86" Margin="251,5,0,0" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Guías Senderistas" Margin="5,-2,-8,0">
@@ -39,15 +42,19 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="118*"/>
                         <RowDefinition Height="23*"/>
-                        <RowDefinition Height="7*"/>
+
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="10*"/>
-                        <ColumnDefinition Width="141*"/>
-                        <ColumnDefinition Width="414*"/>
+
+                        <ColumnDefinition Width="220*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="350*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox HorizontalAlignment="Center" Height="188" VerticalAlignment="Center" Width="136" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1"/>
-                    <Button x:Name="BtnAddGuia" Grid.Column="1" Content="Añadir Guía" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click"/>
+                    <ListBox x:Name="lstListaGuias" Grid.Column="0" SelectedIndex="0" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+                    <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Margin="198,0,0,48" Grid.RowSpan="2" />
+                    <StackPanel x:Name="spDetallesGuia" Grid.Column="2" Orientation="Vertical" Grid.ColumnSpan="2" Margin="5,0,0,48" Grid.RowSpan="2">
+                    </StackPanel>
+                    <Button x:Name="BtnAddGuia" Grid.Column="2" Content="Añadir Guía" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Excursionistas" Margin="8,-2,-14,0">
@@ -55,24 +62,35 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="118*"/>
                         <RowDefinition Height="23*"/>
-                        <RowDefinition Height="7*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220*"/>
                         <ColumnDefinition Width="10*"/>
-                        <ColumnDefinition Width="141*"/>
-                        <ColumnDefinition Width="414*"/>
+                        <ColumnDefinition Width="350*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox HorizontalAlignment="Center" Height="188" VerticalAlignment="Center" Width="136" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1"/>
+                    <ListBox x:Name="lstListaExcursionistas" Grid.Column="0" SelectedIndex="0" Margin="5">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding Nombre}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
+                    <StackPanel x:Name="spDetallesExcursionista" Grid.Column="2" Orientation="Vertical">
+                    </StackPanel>
+                    <Button x:Name="BtnAddExcursionista" Grid.Column="2" Content="Añadir Excursionista" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444"/>
                 </Grid>
             </TabItem>
         </TabControl>
         <Menu x:Name="AYUDA" HorizontalAlignment="Center" Height="37" VerticalAlignment="Center" Width="56">
-            <MenuItem Header="AYUDA" Height="40" Width="58" >
+            <MenuItem Header="AYUDA" Height="40" Width="58" VerticalAlignment="Top" HorizontalAlignment="Left" >
                 <MenuItem x:Name="miGuardar" Header="Guardar">
                 </MenuItem>
             </MenuItem>
         </Menu>
-        <Label x:Name="InfoUser" Grid.Column="2" Content="Usuario: Admin" Margin="10,131,9,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Label x:Name="InfoUser" Grid.Column="2" Content="Usuario: Admin" Margin="0,131,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Center" Width="124"/>
         <Image x:Name="Img_User" Source="/Recursos/User_Icon.png" Grid.Column="2" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Height="149" Width="149"/>
     </Grid>
 </Window>

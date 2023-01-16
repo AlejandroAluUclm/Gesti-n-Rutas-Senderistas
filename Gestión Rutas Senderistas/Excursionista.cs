@@ -8,7 +8,6 @@ public class Excursionista
     public string Edad { get; set; }
     public string Telefono { get; set; }
     public string Email { get; set; }
-    public string Foto { get; set; }
     public List<string> ListadoRutas = new List<string>();
 
     public Excursionista(string nombre, string apellido, string edad, string telefono, string email)

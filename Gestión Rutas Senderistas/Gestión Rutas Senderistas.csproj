@@ -137,5 +137,8 @@
   <ItemGroup>
     <Resource Include="Recursos\InfoGuia.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Excursionistas.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

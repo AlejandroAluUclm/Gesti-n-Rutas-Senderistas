@@ -25,9 +25,12 @@ namespace Gestión_Rutas_Senderistas
         private string password = "ipo1";
         private BitmapImage imagCheck = new BitmapImage(new Uri("/Recursos/check.png", UriKind.Relative));
         private BitmapImage imagCross = new BitmapImage(new Uri("/Recursos/cross.png", UriKind.Relative));
+
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
         private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
         {
