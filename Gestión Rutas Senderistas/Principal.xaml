@@ -80,7 +80,6 @@
                     <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
                     <StackPanel x:Name="spDetallesExcursionista" Grid.Column="2" Orientation="Vertical">
                     </StackPanel>
-                    <Button x:Name="BtnAddExcursionista" Grid.Column="2" Content="Añadir Excursionista" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444"/>
                 </Grid>
             </TabItem>
         </TabControl>

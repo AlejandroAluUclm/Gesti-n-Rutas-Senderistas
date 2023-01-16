@@ -15,6 +15,7 @@ public class Ruta
     public string Comida { get; set; }
     public List<string> PuntosInteres = new List<string>();
     public List<string> Escursionistas = new List<string>();
+    public string Foto { get; set; }
 
     public Ruta(string nombre, string origen, string destino, string fecha, string hora, string guía, string tiempoEstimado, string dificultad, string material, string comida, List<string> puntosInteres)
     {
