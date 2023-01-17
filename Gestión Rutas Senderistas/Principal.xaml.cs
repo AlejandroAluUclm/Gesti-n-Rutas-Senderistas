@@ -20,7 +20,7 @@ namespace Gestión_Rutas_Senderistas
     /// </summary>
     public partial class Principal : Window
     {
-        private AddGuia vGuia = new AddGuia();
+        private AddGuia vGuia;
         private AddRuta vRuta = new AddRuta();
         List<Ruta> listadoRutas;
         List<Excursionista> listadoExcursionistas;
@@ -139,8 +139,8 @@ namespace Gestión_Rutas_Senderistas
 
         private void BtnAddGuia_Click(object sender, RoutedEventArgs e)
         {
+            vGuia = new AddGuia(lstListaGuias);
             vGuia.Show();
-            this.Close();
         }
 
         private void BtnAddRuta_Click(object sender, RoutedEventArgs e)

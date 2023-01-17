@@ -64,3 +64,25 @@ D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Traba
 D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.CoreCompileInputs.cache
 D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.exe
 D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.pdb
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\bin\Debug\Gestión Rutas Senderistas.exe.config
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\bin\Debug\Gestión Rutas Senderistas.exe
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\bin\Debug\Gestión Rutas Senderistas.pdb
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.SuggestedBindingRedirects.cache
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\AddGuia.g.cs
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\AddRuta.g.cs
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\MainWindow.g.cs
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Principal.g.cs
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\App.g.cs
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas_MarkupCompile.cache
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas_MarkupCompile.lref
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\AddGuia.baml
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\AddRuta.baml
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\MainWindow.baml
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Principal.baml
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.g.resources
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión_Rutas_Senderistas.Properties.Resources.resources
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.GenerateResource.cache
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.exe
+C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master (1)\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.pdb
