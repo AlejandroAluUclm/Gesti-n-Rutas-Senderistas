@@ -35,7 +35,7 @@ namespace Gestión_Rutas_Senderistas
             listadoGuias = CargarContenido();
             listadoRutas = CargarXML();
             lstListaExcursionistas.ItemsSource = listadoExcursionistas;
-            lstListaGuias.ItemsSource = listadoGuias;
+          //  lstListaGuias.ItemsSource = listadoGuias;
             lstListaRutas.ItemsSource = listadoRutas;
         }
         private List<Excursionista> CargarContenidoXML()
@@ -87,6 +87,7 @@ namespace Gestión_Rutas_Senderistas
                 }
                 nuevoGuia.Idiomas = idiomas;
                 listado.Add(nuevoGuia);
+                lstListaGuias.Items.Add(nuevoGuia);
             }
             return listado;
         }
@@ -139,6 +140,7 @@ namespace Gestión_Rutas_Senderistas
         private void BtnAddGuia_Click(object sender, RoutedEventArgs e)
         {
             vGuia.Show();
+            this.Close();
         }
 
         private void BtnAddRuta_Click(object sender, RoutedEventArgs e)
