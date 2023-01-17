@@ -37,25 +37,24 @@
         <Label Grid.Column="4" Content="P. Interés:" HorizontalAlignment="Left" Grid.Row="0" VerticalAlignment="Center" FontSize="18" Margin="31,0,0,0" Width="96" HorizontalContentAlignment="Right"/>
         <Label Grid.Column="4" Content="Material:" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" FontSize="18" Margin="42,0,0,0" Width="85" HorizontalContentAlignment="Right"/>
         <Label Grid.Column="4" Content="Comida:" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Center" FontSize="18" Margin="42,0,0,0" Width="85" HorizontalContentAlignment="Right"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
-        <TextBox Grid.Column="5" HorizontalAlignment="Left" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
-        <TextBox Grid.Column="5" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
+        <TextBox x:Name="Origentxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Destinotxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Fechatxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Horatxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Duraciontxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="NombrePuntoInterestxt" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
+        <TextBox x:Name="Topologiatxt" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
         <Label Grid.Column="1" Content="Duración:" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Center" FontSize="18" Margin="10,0,0,0" Grid.ColumnSpan="2" Width="117" HorizontalContentAlignment="Right"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Nombretxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
         <Label Grid.Column="4" Content="Foto P.I.:" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" FontSize="18" Margin="31,0,0,0" Width="96" HorizontalContentAlignment="Right"/>
-        <Button Grid.Column="6" Content="Añadir" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" FontSize="18"/>
-        <ComboBox Grid.Column="2" HorizontalAlignment="Left" Margin="26,21,0,0" Grid.Row="6" VerticalAlignment="Top" Width="160" FontSize="18"/>
-        <ComboBox Grid.Column="5" HorizontalAlignment="Left" Margin="14,17,0,0" Grid.Row="5" VerticalAlignment="Top" Width="160" FontSize="18"/>
-        <Label Grid.Column="4" Content="Foto R.:" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Center" FontSize="18" Margin="42,0,0,0" Width="85" HorizontalContentAlignment="Right"/>
-        <TextBox Grid.Column="5" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
+        <Button Grid.Column="6" Content="Añadir" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" FontSize="18" Click="Button_Click"/>
+        <TextBox x:Name="Comidatxt" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
         <Label Grid.Column="4" Content="Desc.:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" FontSize="18" Margin="31,0,0,0" Width="96" HorizontalContentAlignment="Right"/>
         <Label Grid.Column="4" Content="Topología:" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" FontSize="18" Margin="31,0,0,0" Width="96" HorizontalContentAlignment="Right"/>
-        <TextBox Grid.Column="5" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
+        <TextBox x:Name="Descripciontxt" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
         <Label Grid.Column="1" Content="Dificultad:" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Center" FontSize="18" Margin="10,0,0,0" Width="117" HorizontalContentAlignment="Right"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Dificultadtxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
+        <TextBox x:Name="Materialtxt" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
+        <TextBox x:Name="Guiatxt" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="6" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="234" FontSize="18"/>
     </Grid>
 </Window>

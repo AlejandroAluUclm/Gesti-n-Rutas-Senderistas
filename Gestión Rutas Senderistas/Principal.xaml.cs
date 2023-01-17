@@ -21,8 +21,8 @@ namespace Gestión_Rutas_Senderistas
     public partial class Principal : Window
     {
         private AddGuia vGuia;
-        private AddRuta vRuta = new AddRuta();
-        List<Ruta> listadoRutas;
+        private AddRuta vRuta;
+        public List<Ruta> listadoRutas;
         List<Excursionista> listadoExcursionistas;
         public List<Guia> listadoGuias;
         public Principal()
@@ -35,8 +35,8 @@ namespace Gestión_Rutas_Senderistas
             listadoGuias = CargarContenido();
             listadoRutas = CargarXML();
             lstListaExcursionistas.ItemsSource = listadoExcursionistas;
-          //  lstListaGuias.ItemsSource = listadoGuias;
-            lstListaRutas.ItemsSource = listadoRutas;
+            //lstListaGuias.ItemsSource = listadoGuias;
+            //lstListaRutas.ItemsSource = listadoRutas;
         }
         private List<Excursionista> CargarContenidoXML()
         {
@@ -124,6 +124,7 @@ namespace Gestión_Rutas_Senderistas
                 }
                 nuevaRuta.LPuntosInteres = puntosInteres;
                 listado.Add(nuevaRuta);
+                lstListaRutas.Items.Add(nuevaRuta);
             }
             return listado;
         }
@@ -145,6 +146,7 @@ namespace Gestión_Rutas_Senderistas
 
         private void BtnAddRuta_Click(object sender, RoutedEventArgs e)
         {
+            vRuta = new AddRuta(lstListaRutas);
             vRuta.Show();
         }
     }

@@ -19,7 +19,7 @@ namespace Gestión_Rutas_Senderistas
     /// </summary>
     public partial class AddGuia : Window
     {
-        private Uri imagCross = new Uri("/Recursos/cross.png", UriKind.Relative);
+        private Uri imagGuia = new Uri("/Recursos/User_Icon.png", UriKind.Relative);
         private List<string> lista = new List<string>();
         Principal principal = new Principal();
         ListBox LstGuias;
@@ -31,15 +31,14 @@ namespace Gestión_Rutas_Senderistas
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            principal.Show();
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            lista = Idiomastxt.ToString().Split(',').ToList<string>();
-           
+            lista.Add(Idiomastxt.Text.ToString());
+            lista.Add(Idiomastxt2.Text.ToString());
             Guia guia = new Guia(Nombretxt.Text.ToString(), Apellidotxt.Text.ToString(), Telefonotxt.Text.ToString(), Emailtxt.Text.ToString(),
-                imagCross, lista);
+                imagGuia, lista);
             
             LstGuias.Items.Add(guia);
             this.Close();
