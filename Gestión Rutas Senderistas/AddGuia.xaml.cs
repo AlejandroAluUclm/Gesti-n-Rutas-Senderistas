@@ -19,6 +19,8 @@ namespace Gestión_Rutas_Senderistas
     /// </summary>
     public partial class AddGuia : Window
     {
+        private Uri imagCross = new Uri("/Recursos/cross.png", UriKind.Relative);
+        private List<string> lista = new List<string>();
         public AddGuia()
         {
             InitializeComponent();
@@ -26,6 +28,18 @@ namespace Gestión_Rutas_Senderistas
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            lista = Idiomastxt.ToString().Split(',').ToList<string>();
+           
+            Guia guia = new Guia(Nombretxt.ToString(), Apellidotxt.ToString(), Telefonotxt.ToString(), Emailtxt.ToString(),
+                imagCross, lista);
+            Principal principal = new Principal();
+            principal.listadoGuias.Add(guia);
+            principal.lstListaGuias.Items.Add(guia);
+            this.Close();
         }
     }
 }

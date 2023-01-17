@@ -42,3 +42,25 @@ C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master\Gestion-Rutas-Senderis
 C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.CoreCompileInputs.cache
 C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.exe
 C:\Users\alber\Downloads\Gestion-Rutas-Senderistas-master\Gestion-Rutas-Senderistas-master\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.pdb
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\bin\Debug\Gestión Rutas Senderistas.exe.config
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\bin\Debug\Gestión Rutas Senderistas.exe
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\bin\Debug\Gestión Rutas Senderistas.pdb
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.AssemblyReference.cache
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.SuggestedBindingRedirects.cache
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\AddGuia.g.cs
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\AddRuta.g.cs
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\MainWindow.g.cs
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Principal.g.cs
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\App.g.cs
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas_MarkupCompile.cache
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas_MarkupCompile.lref
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\AddGuia.baml
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\AddRuta.baml
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\MainWindow.baml
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Principal.baml
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.g.resources
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión_Rutas_Senderistas.Properties.Resources.resources
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.GenerateResource.cache
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.csproj.CoreCompileInputs.cache
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.exe
+D:\Clases\4º\Primer cuatrimestre\Interacción Persona Ordenador (IPO)\Lab\Trabajo Lab\Gestión Rutas Senderistas\Gestión Rutas Senderistas\obj\Debug\Gestión Rutas Senderistas.pdb

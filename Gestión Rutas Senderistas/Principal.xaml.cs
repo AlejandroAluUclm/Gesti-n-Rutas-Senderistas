@@ -24,7 +24,7 @@ namespace Gestión_Rutas_Senderistas
         private AddRuta vRuta = new AddRuta();
         List<Ruta> listadoRutas;
         List<Excursionista> listadoExcursionistas;
-        List<Guia> listadoGuias;
+        public List<Guia> listadoGuias;
         public Principal()
         {
             InitializeComponent();

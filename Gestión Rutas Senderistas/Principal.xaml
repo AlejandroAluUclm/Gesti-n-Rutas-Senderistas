@@ -103,7 +103,7 @@
                             <Label x:Name="lblI2" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Idiomas[1]}"/>
                         </StackPanel>
                     </StackPanel>
-                    <Button x:Name="BtnAddGuia" Grid.Column="2" Content="Añadir Guía" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click" Height="26" Width="87"/>
+                    <Button x:Name="BtnAddGuia" Grid.Column="2" Content="Añadir Guía" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click" Height="26" Width="87" Margin="244,0,0,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Excursionistas" Margin="8,-2,-14,0">
