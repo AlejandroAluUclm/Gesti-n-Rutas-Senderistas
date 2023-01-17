@@ -1,4 +1,10 @@
 ﻿<Giuas>
-	<Guia Nombre=" " Apellido=" " Telefono=" " Email=" " NotaMedia=" "
-		  Idiomas=" " Foto=" "/>
+	<Guia Nombre="Alejandro " Apellido="Duran " Telefono="654734588 " Email="alejandro.duran@alu.uclm.es " Foto="Recursos/User_Icon.png ">
+		<Idioma Nombre="Ingles"/>
+		<Idioma Nombre="Frances"/>
+	</Guia>
+	<Guia Nombre="Alberto " Apellido="Duran " Telefono="654734588 " Email="alejandro.duran@alu.uclm.es " Foto="Recursos/User_Icon.png ">
+		<Idioma Nombre="Ingles"/>
+		<Idioma Nombre="Frances"/>
+	</Guia>
 </Giuas>

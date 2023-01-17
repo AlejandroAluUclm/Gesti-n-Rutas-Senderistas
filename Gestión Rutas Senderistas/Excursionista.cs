@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows.Documents;
 
 public class Excursionista
@@ -8,14 +9,17 @@ public class Excursionista
     public string Edad { get; set; }
     public string Telefono { get; set; }
     public string Email { get; set; }
-    public List<string> ListadoRutas = new List<string>();
+    public Uri Foto { get; set; }
+    public List<string> ListadoRutas { get; set; }
 
-    public Excursionista(string nombre, string apellido, string edad, string telefono, string email)
+    public Excursionista(string nombre, string apellido, string edad, string telefono, string email, Uri foto, List<string> listadoRutas)
     {
         Nombre = nombre;
         Apellido = apellido;
         Edad = edad;
         Telefono = telefono;
         Email = email;
+        Foto = foto;
+        ListadoRutas = listadoRutas;
     }
 }

@@ -79,6 +79,7 @@
     </Compile>
     <Compile Include="Excursionista.cs" />
     <Compile Include="Guia.cs" />
+    <Compile Include="PuntoInteres.cs" />
     <Compile Include="Ruta.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

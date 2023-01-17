@@ -4,4 +4,9 @@
 		<Ruta Nombre= "Ruta verde"/>
 		<Ruta Nombre= "Ruta roja"/>
 	</Excursionista>
+	<Excursionista Nombre="Alejandro" Apellidos="Diaz Nuñez" Edad="21"
+			Telefono="673540899" Email="alberto.diaz17@alu.uclm.es">
+		<Ruta Nombre= "Ruta verde"/>
+		<Ruta Nombre= "Ruta roja"/>
+	</Excursionista>
 </Excursionistas>

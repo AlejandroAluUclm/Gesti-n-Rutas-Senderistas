@@ -1,5 +1,10 @@
 ﻿<Rutas>
-	<Ruta Nombre =" " Origen=" " Destino=" " Fecha=" " Hora=" " Guia=" "
-		  TiempoEstimado=" " Dificultad=" " Material=" " Comida=" "
-		  PuntosInteres=" " Foto=" "/>
+	<Ruta Nombre ="Ruta Verde " Origen="Ciudad Real " Destino="Miguelturra " Fecha="20-01-2023 " Hora="9:00 " Guia="Alejandro Duran "
+		  TiempoEstimado="2 horas " Dificultad="6/10 " Material="Zapatillas de senderismo " Comida="No ">
+		<PuntoInteres Nombre="Mirador lago" Descripcion="Mirador al lago" Tipologia="Mirador" Foto="Recursos/Sendero.jpg"></PuntoInteres>
+	</Ruta>
+	<Ruta Nombre ="Ruta Roja " Origen="Ciudad Real " Destino="Miguelturra " Fecha="20-01-2023 " Hora="9:00 " Guia="Alejandro Duran "
+	  TiempoEstimado="2 horas " Dificultad="6/10 " Material="Zapatillas de senderismo " Comida="No ">
+		<PuntoInteres Nombre="Mirador lago " Descripcion="Mirador al lago" Tipologia="Mirador" Foto="Recursos/Sendero.jpg"></PuntoInteres>
+	</Ruta>
 </Rutas> 

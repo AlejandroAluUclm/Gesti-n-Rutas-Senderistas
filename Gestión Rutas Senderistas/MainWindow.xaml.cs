@@ -51,7 +51,6 @@ namespace Gestión_Rutas_Senderistas
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MessageBox.Show("Gracias por usar nuestra aplicación...", "Despedida");
         }
 
         private Boolean ComprobarUsuario(string user)

@@ -1,3 +1,10 @@
 ﻿<Excursionistas>
-	<Excursionista Nombre=" " Apellido=" " Edad=" " Telefono=" " Email=" " />
+	<Excursionista Nombre="Alberto " Apellido="Diaz Nuñez " Edad="21 " Telefono="635456499 " Email="alberto.diaz17@alu.uclm.es " Foto="Recursos/User_Icon.png" >
+		<Ruta Nombre="ruta verde"/>
+		<Ruta Nombre="ruta roja"/>
+	</Excursionista>
+	<Excursionista Nombre="Alejandro " Apellido="Diaz Nuñez " Edad="21 " Telefono="635456499 " Email="alberto.diaz17@alu.uclm.es " Foto="Recursos/User_Icon.png" >
+		<Ruta Nombre="ruta verde"/>
+		<Ruta Nombre="ruta roja"/>
+	</Excursionista>
 </Excursionistas>
