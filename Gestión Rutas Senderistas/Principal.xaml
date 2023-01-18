@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
         <TabControl Grid.Column="1" Grid.ColumnSpan="1" Margin="0,5,0,10" Grid.Row="1">
             <TabItem Header="Rutas" Margin="-2,-2,-5,0">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFB7B4D1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="129*"/>
                         <RowDefinition Height="19*"/>
@@ -30,7 +30,7 @@
                         <ColumnDefinition Width="10*"/>
                         <ColumnDefinition Width="350*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox x:Name="lstListaRutas" Grid.Column="0" SelectedIndex="0" Margin="5,5,5,5">
+                    <ListBox x:Name="lstListaRutas" Grid.Column="0" Margin="5,5,5,5" FontSize="18">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
@@ -39,36 +39,69 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"/>
+                    <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Width="5" Grid.RowSpan="2"/>
                     <ScrollViewer Grid.Column="2" Margin="0,0,0,46" Grid.RowSpan="2">
                         <StackPanel x:Name="spDetallesRuta" Grid.Column="0" Orientation="Vertical" Grid.ColumnSpan="3">
-                            <Label x:Name="lblNombreR" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Nombre}"/>
-                            <Label x:Name="lblOrigen" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Origen}"/>
-                            <Label x:Name="lblDestino" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Destino}"/>
-                            <Label x:Name="lblFecha" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Fecha}"/>
-                            <Label x:Name="lblHora" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Hora}"/>
-                            <Label x:Name="lblGuia" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Guía}"/>
-                            <Label x:Name="lblTiempoEstimado" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.TiempoEstimado}"/>
-                            <Label x:Name="lblDificultad" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Dificultad}"/>
-                            <Label x:Name="lblMaterial" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Material}"/>
-                            <Label x:Name="lblComida" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Comida}"/>
+                            <Label x:Name="lblNombreR" FontWeight="Bold" FontSize="25" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Nombre}" HorizontalAlignment="Center"/>
+                            <StackPanel x:Name="spOR" Orientation="Horizontal">
+                                <Label x:Name="lalOR" FontWeight="Bold" FontSize="17" Content="Origen: "/>
+                                <Label x:Name="lblOrigen" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Origen}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spDR" Orientation="Horizontal">
+                                <Label x:Name="lalDR" FontWeight="Bold" FontSize="17" Content="Destino: "/>
+                                <Label x:Name="lblDestino" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Destino}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spFR" Orientation="Horizontal">
+                                <Label x:Name="lalFR" FontWeight="Bold" FontSize="17" Content="Fecha: "/>
+                                <Label x:Name="lblFecha" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Fecha}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spHR" Orientation="Horizontal">
+                                <Label x:Name="lalHR" FontWeight="Bold" FontSize="17" Content="Hora: "/>
+                                <Label x:Name="lblHora" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Hora}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spGR" Orientation="Horizontal">
+                                <Label x:Name="lalGR" FontWeight="Bold" FontSize="17" Content="Guía: "/>
+                                <Label x:Name="lblGuia" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Guía}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spTER" Orientation="Horizontal">
+                                <Label x:Name="lalTER" FontWeight="Bold" FontSize="17" Content="Tiempo Estimado: "/>
+                                <Label x:Name="lblTiempoEstimado" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.TiempoEstimado}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spDIR" Orientation="Horizontal">
+                                <Label x:Name="lalDIR" FontWeight="Bold" FontSize="17" Content="Dificultad: "/>
+                                <Label x:Name="lblDificultad" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Dificultad}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spMR" Orientation="Horizontal">
+                                <Label x:Name="lalMR" FontWeight="Bold" FontSize="17" Content="Material: "/>
+                                <Label x:Name="lblMaterial" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Material}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spCR" Orientation="Horizontal">
+                                <Label x:Name="lalCR" FontWeight="Bold" FontSize="17" Content="Comida: "/>
+                                <Label x:Name="lblComida" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.Comida}"/>
+                            </StackPanel>
+                            <Label x:Name="lblPI" FontWeight="Bold" FontSize="18" Content="Puntos de interés"/>
                             <StackPanel x:Name="spPuntosInteres" Grid.Column="2" Orientation="Vertical">
-                                <Label x:Name="lblP1N" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Nombre}"/>
-                                <Image Width="75" Height="75" Source="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Foto}"/>
-                                <Label x:Name="lblP1D" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Descripcion}"/>
-                                <Label x:Name="lblP1T" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Tipologia}"/>
-                                <Label x:Name="lblP2N" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[1].Nombre}"/>
-                                <Image Width="75" Height="75" Source="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[1].Foto}"/>
-                                <Label x:Name="lblP2D" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[1].Descripcion}"/>
-                                <Label x:Name="lblP2T" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[1].Tipologia}"/>
+                                <StackPanel x:Name="spNPI" Orientation="Horizontal">
+                                    <Label x:Name="lalNPI" FontWeight="Bold" FontSize="17" Content="       Nombre: "/>
+                                    <Label x:Name="lblP1N" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Nombre}"/>
+                                </StackPanel>
+                                <Image Width="150" Height="150" Source="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Foto}" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+                                <StackPanel x:Name="spTPI" Orientation="Horizontal">
+                                    <Label x:Name="lalTPI" FontWeight="Bold" FontSize="17" Content="       Tipología: "/>
+                                    <Label x:Name="lblP1T" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Tipologia}"/>
+                                </StackPanel>
+                                <StackPanel x:Name="spDPI" Orientation="Horizontal">
+                                    <Label x:Name="lalDPI" FontWeight="Bold" FontSize="17" Content="       Descripción: "/>
+                                    <Label x:Name="lblP1D" FontSize="17" Content="{Binding ElementName=lstListaRutas,Path=SelectedItem.LPuntosInteres[0].Descripcion}"/>
+                                </StackPanel>
                             </StackPanel>
                         </StackPanel>
                     </ScrollViewer>
-                    <Button x:Name="BtnAddRuta" Grid.Column="2" Content="Añadir Ruta" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddRuta_Click" Height="26" Width="91" Margin="0,12,10,0"/>
+                    <Button x:Name="BtnAddRuta" Grid.Column="2" Content="Añadir Ruta" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Bottom" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddRuta_Click" Height="26" Width="91" Margin="0,12,10,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Guías Senderistas" Margin="5,-2,-8,0">
-                <Grid Background="#FFE5E5E5" Margin="0,0,-1,0">
+                <Grid Background="#FFB7B4D1" Margin="0,0,-1,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="157*"/>
                         <RowDefinition Height="21*"/>
@@ -80,34 +113,53 @@
                         <ColumnDefinition Width="10*"/>
                         <ColumnDefinition Width="350*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox x:Name="lstListaGuias" Grid.Column="0" Margin="5,5,5,5">
+                    <ListBox x:Name="lstListaGuias" Grid.Column="0" Margin="5,5,5,5" FontSize="18">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
+                                    <Image Width="18" Height="18" Source="{Binding Foto}"/>
                                     <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding Nombre}"/>
                                     <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding Apellido}"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"/>
-                    <StackPanel x:Name="spDetallesGuia" Grid.Column="2" Orientation="Vertical" Margin="5,0,0,10">
-                        <Image Width="150" Height="150" Source="{Binding ElementName=lstListaGuias,Path=SelectedItem.Foto}"/>
-                        <Label x:Name="lblNombreG" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Nombre}"/>
-                        <Label x:Name="lblApellidosG" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Apellido}"/>
-                        <Label x:Name="lblTelefonoG" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Telefono}"/>
-                        <Label x:Name="lblEmailG" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Email}"/>
-                        <Label x:Name="lblNotaMedia" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.NotaMedia}"/>
-                        <StackPanel x:Name="spIdiomas" Grid.Column="2" Orientation="Vertical">
-                            <Label x:Name="lblI1" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Idiomas[0]}"/>
-                            <Label x:Name="lblI2" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Idiomas[1]}"/>
+                    <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Width="5" Grid.RowSpan="2"/>
+                    <ScrollViewer Grid.Column="2" Margin="0,0,0,46" Grid.RowSpan="2">
+                        <StackPanel x:Name="spDetallesGuia" Grid.Column="2" Orientation="Vertical" Margin="5,0,0,10">
+                            <Image Width="150" Height="150" Source="{Binding ElementName=lstListaGuias,Path=SelectedItem.Foto}"/>
+                            <StackPanel x:Name="spNG" Orientation="Horizontal">
+                                <Label x:Name="lalNl" FontWeight="Bold" FontSize="17" Content="Nombre: "/>
+                                <Label x:Name="lblNombreG" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Nombre}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spAG" Orientation="Horizontal">
+                                <Label x:Name="lblAl" FontWeight="Bold" FontSize="17" Content="Apellidos: "/>
+                                <Label x:Name="lblApellidosG" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Apellido}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spTG" Orientation="Horizontal">
+                                <Label x:Name="lblTl" FontWeight="Black" FontSize="17" Content="Telefono: "/>
+                                <Label x:Name="lblTelefonoG" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Telefono}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spEG" Orientation="Horizontal">
+                                <Label x:Name="lblEl" FontWeight="Bold" FontSize="17" Content="Email: "/>
+                                <Label x:Name="lblEmailG" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Email}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spNMG" Orientation="Horizontal">
+                                <Label x:Name="lblNMl" FontWeight="Bold" FontSize="17" Content="Nota Media: "/>
+                                <Label x:Name="lblNotaMedia" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.NotaMedia}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spIdiomas" Grid.Column="2" Orientation="Horizontal">
+                                <Label x:Name="lblIl" FontWeight="Bold" FontSize="17" Content="Idiomas: "/>
+                                <Label x:Name="lblI1" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Idiomas[0]}"/>
+                                <Label x:Name="lblI2" FontSize="17" Content="{Binding ElementName=lstListaGuias,Path=SelectedItem.Idiomas[1]}"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                    <Button x:Name="BtnAddGuia" Grid.Column="2" Content="Añadir Guía" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click" Height="26" Width="87" Margin="244,0,0,0"/>
+                    </ScrollViewer>
+                    <Button x:Name="BtnAddGuia" Grid.Column="2" Content="Añadir Guía" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Bottom" FontSize="16" Background="#FFF1F0F0" BorderBrush="#FF444444" Click="BtnAddGuia_Click" Height="26" Width="87" Margin="244,0,0,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Excursionistas" Margin="8,-2,-14,0">
-                <Grid Background="#FFE5E5E5" Margin="0,0,-1,0">
+                <Grid Background="#FFB7B4D1" Margin="0,0,-1,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="118*"/>
                         <RowDefinition Height="23*"/>
@@ -117,39 +169,70 @@
                         <ColumnDefinition Width="10*"/>
                         <ColumnDefinition Width="350*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox x:Name="lstListaExcursionistas" Grid.Column="0" SelectedIndex="0" Margin="5">
+                    <ListBox x:Name="lstListaExcursionistas" Grid.Column="0" Margin="5" FontSize="18">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
+                                    <Image Width="18" Height="18" Source="{Binding Foto}"/>
                                     <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding Nombre}"/>
                                     <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding Apellido}"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
-                    <StackPanel x:Name="spDetallesExcursionista" Grid.Column="2" Orientation="Vertical">
-                        <Image Width="100" Height="100" Source="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Foto}"/>
-                        <Label x:Name="lblNombre" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Nombre}"/>
-                        <Label x:Name="lblApellidos" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Apellido}"/>
-                        <Label x:Name="lblEdad" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Edad}"/>
-                        <Label x:Name="lblTelefono" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Telefono}"/>
-                        <Label x:Name="lblEmail" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Email}"/>
-                        <StackPanel x:Name="spRutas" Grid.Column="2" Orientation="Vertical">
-                            <Label x:Name="lblEmai" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.ListadoRutas[0]}"/>
-                            <Label x:Name="lblEma" FontWeight="Bold" FontSize="20" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.ListadoRutas[1]}"/>
+                    <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" Grid.RowSpan="2" />
+                    <ScrollViewer Grid.Column="2" Margin="0,0,0,46" Grid.RowSpan="2">
+                        <StackPanel x:Name="spDetallesExcursionista" Grid.Column="2" Orientation="Vertical">
+                            <Image Width="150" Height="150" Source="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Foto}"/>
+                            <StackPanel x:Name="spNe" Orientation="Horizontal">
+                                <Label x:Name="lalNe" FontWeight="Bold" FontSize="17" Content="Nombre: "/>
+                                <Label x:Name="lblNombre" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Nombre}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spAe" Orientation="Horizontal">
+                                <Label x:Name="lalAe" FontWeight="Bold" FontSize="17" Content="Apellidos: "/>
+                                <Label x:Name="lblApellidos" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Apellido}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spEe" Orientation="Horizontal">
+                                <Label x:Name="lalEe" FontWeight="Bold" FontSize="17" Content="Edad: "/>
+                                <Label x:Name="lblEdad" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Edad}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spTe" Orientation="Horizontal">
+                                <Label x:Name="lalTe" FontWeight="Bold" FontSize="17" Content="Telefono: "/>
+                                <Label x:Name="lblTelefono" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Telefono}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spEm" Orientation="Horizontal">
+                                <Label x:Name="lalEm" FontWeight="Bold" FontSize="17" Content="Email: "/>
+                                <Label x:Name="lblEmail" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.Email}"/>
+                            </StackPanel>
+                            <StackPanel x:Name="spRutas" Grid.Column="2" Orientation="Horizontal">
+                                <Label x:Name="lblR" FontWeight="Bold" FontSize="17" Content="Rutas: "/>
+                                <Label x:Name="lblR1" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.ListadoRutas[0]}"/>
+                                <Label x:Name="lblR2" FontSize="17" Content="{Binding ElementName=lstListaExcursionistas,Path=SelectedItem.ListadoRutas[1]}"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
+                    </ScrollViewer>
                 </Grid>
             </TabItem>
         </TabControl>
         <Menu x:Name="AYUDA" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="62">
             <MenuItem Header="AYUDA" Height="24" Width="49" VerticalAlignment="Center" HorizontalAlignment="Left" >
-                <MenuItem x:Name="miGuardar" Header="Guardar">
+                <MenuItem x:Name="Acercade" Header="Acerca de" Click="Acercade_Click">
                 </MenuItem>
             </MenuItem>
         </Menu>
-        <Label x:Name="InfoUser" Grid.Column="2" Content="Usuario: Admin" Margin="0,131,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Center" Width="124"/>
+        <Label x:Name="User" Grid.Column="2" Content="Usuario:" Margin="0,130,0,0" Grid.Row="1" FontWeight="Bold" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="InfoUser" Grid.Column="2" Content="Alexipo" Margin="0,150,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
         <Image x:Name="Img_User" Source="/Recursos/User_Icon.png" Grid.Column="2" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Height="149" Width="149"/>
+        <Label x:Name="Nombre" Grid.Column="2" Content="Nombre:" Margin="0,170,0,0" Grid.Row="1" FontWeight="Bold" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="NombreUser" Grid.Column="2" Content="Alejandro" Margin="0,190,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="Apellidos" Grid.Column="2" Content="Apellidos:" Margin="0,210,0,0" Grid.Row="1" FontWeight="Bold" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="ApellidosUser" Grid.Column="2" Content="Duran" Margin="0,230,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="Email" Grid.Column="2" Content="Email:" Margin="0,250,0,0" Grid.Row="1" FontWeight="Bold" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="EmailUser" Grid.Column="2" Content="alexipo@gmail.com" Margin="0,270,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="Telefono" Grid.Column="2" Content="Telefono:" Margin="0,290,0,0" Grid.Row="1" FontWeight="Bold" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="TelefonoUser" Grid.Column="2" Content="653782499" Margin="0,310,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="FechaA" Grid.Column="2" Content="Último Acceso:" Margin="0,330,0,0" Grid.Row="1" FontWeight="Bold" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
+        <Label x:Name="FechaAcceso" Grid.Column="2" Content="20/01/2023" Margin="0,350,0,0" Grid.Row="1" FontSize="17" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139"/>
     </Grid>
 </Window>
+

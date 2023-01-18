@@ -21,8 +21,8 @@ namespace Gestión_Rutas_Senderistas
     public partial class MainWindow : Window
     {
         private Principal principal = new Principal();
-        private string usuario = "admin";
-        private string password = "ipo1";
+        private string usuario = "Alexipo";
+        private string password = "Albertoipo";
         private BitmapImage imagCheck = new BitmapImage(new Uri("/Recursos/check.png", UriKind.Relative));
         private BitmapImage imagCross = new BitmapImage(new Uri("/Recursos/cross.png", UriKind.Relative));
 

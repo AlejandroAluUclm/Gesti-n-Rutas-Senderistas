@@ -149,5 +149,10 @@ namespace Gestión_Rutas_Senderistas
             vRuta = new AddRuta(lstListaRutas);
             vRuta.Show();
         }
+
+        private void Acercade_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Trabajo realizado por Alejandro Durán De La Morena y Alberto Díaz Núñez para el laboratorio de Interacción Persona-Ordenador, que consiste en la gentión de rutas senderistas.");
+        }
     }
 }
