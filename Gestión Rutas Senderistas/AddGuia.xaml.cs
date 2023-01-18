@@ -19,7 +19,8 @@ namespace Gestión_Rutas_Senderistas
     /// </summary>
     public partial class AddGuia : Window
     {
-        private Uri imagGuia = new Uri("/Recursos/User_Icon.png", UriKind.Relative);
+        private Uri defecto = new Uri("/Recursos/User_Icon.png", UriKind.Relative);
+        private Uri imagGuia = new Uri("/Recursos/Guia.png", UriKind.Relative);
         private List<string> lista = new List<string>();
         Principal principal = new Principal();
         ListBox LstGuias;
@@ -35,13 +36,28 @@ namespace Gestión_Rutas_Senderistas
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
+            Uri fotoGuia = null;
+            if (Fotocombo.SelectedItem.ToString().Equals("Imagen guía 1"))
+            {
+                fotoGuia = imagGuia;
+            }
+            else if (Fotocombo.SelectedItem.ToString().Equals("Imagen guía 1"))
+            {
+                fotoGuia = defecto;
+            }
             lista.Add(Idiomastxt.Text.ToString());
             lista.Add(Idiomastxt2.Text.ToString());
             Guia guia = new Guia(Nombretxt.Text.ToString(), Apellidotxt.Text.ToString(), Telefonotxt.Text.ToString(), Emailtxt.Text.ToString(),
-                imagGuia, lista);
+                fotoGuia, lista);
             
             LstGuias.Items.Add(guia);
             this.Close();
+        }
+
+        private void Fotocombo_Initialized(object sender, EventArgs e)
+        {
+            Fotocombo.Items.Add("Imagen guía 1");
+            Fotocombo.Items.Add("Imagen guía 2");
         }
     }
 }

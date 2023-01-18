@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("excursionistas.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("recursos/mirador.jpg")]
 
 

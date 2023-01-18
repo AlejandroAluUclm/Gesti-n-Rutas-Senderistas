@@ -21,6 +21,7 @@ namespace Gestión_Rutas_Senderistas
     {
         ListBox LstRutas;
         private Uri imagPI = new Uri("/Recursos/Sendero.jpg", UriKind.Relative);
+        private Uri imagPI2 = new Uri("/Recursos/Mirador.jpg", UriKind.Relative);
         private List<PuntoInteres> lista = new List<PuntoInteres>();
         public AddRuta(ListBox lstRutas)
         {
@@ -34,9 +35,20 @@ namespace Gestión_Rutas_Senderistas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Uri fotoPI = null;
+            if (Fotocombo.SelectedItem.ToString().Equals("Punto interés 1"))
+            {
+                fotoPI = imagPI;
+            }
+            else if (Fotocombo.SelectedItem.ToString().Equals("Punto interés 2"))
+            {
+                fotoPI = imagPI2;
+            }
+
             PuntoInteres pi = new PuntoInteres(NombrePuntoInterestxt.Text.ToString(),
-                Descripciontxt.Text.ToString(), Topologiatxt.Text.ToString(), imagPI);
-            lista.Add(pi);
+                Descripciontxt.Text.ToString(), Topologiatxt.Text.ToString(), fotoPI);
+                lista.Add(pi);
+
             Ruta ruta = new Ruta(Nombretxt.Text.ToString(), Origentxt.Text.ToString(),
                 Destinotxt.Text.ToString(), Fechatxt.Text.ToString(), Horatxt.Text.ToString(),
                 Guiatxt.Text.ToString(), Duraciontxt.Text.ToString(), Dificultadtxt.Text.ToString(), 
@@ -44,6 +56,12 @@ namespace Gestión_Rutas_Senderistas
 
             LstRutas.Items.Add(ruta);
             this.Close();
+        }
+
+        private void Fotocombo_Initialized(object sender, EventArgs e)
+        {
+            Fotocombo.Items.Add("Punto interés 1");
+            Fotocombo.Items.Add("Punto interés 2");
         }
     }
 }
